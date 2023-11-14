@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+   
+    <style>
+        .check {
+            padding: 13px;
+            box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+            margin: 9px;
+        }
+
+        .btn {
+            border-bottom: 1px solid rgba(219, 223, 234, 0.90);
+        }
+        #cool{
+             align-items: center;
+        }
+ 
+
+        .my-btn {
+            width: 90px;
+            height: 30px;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #043c8b;
+            color: #ffffff;
+            border: none;
+            display: flex;
+           align-items: center;
+
+
+
+        }
+
+        .b-btn {
+            width: 90px;
+            height: 30px;
+            flex-direction: row;          
+            justify-content: center;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #46972c;
+            color: #ffffff;
+            border: none;
+            display: absolute;
+           align-items: center;
+            }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+     <!-- Page Wrapper -->
+     <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="navbar-nav  sidebar sidebar-dark accordion" id="accordionSidebar">
+    
+                <!-- Sidebar - Brand -->
+                <a style="background-color: #46972C;" sidebar-brand d-flex align-items-center justify-content-center
+                    href="index.html">
+                    <div class="sidebar-brand-icon p-2">
+                        <img class="mr-0"src="img/logo 3.png" alt="photo">
+                         <!-- <svg xmlns="http://www.w3.org/2000/svg" width=" 21.984px" height="16.008px" viewBox="0 0 22 17" fill="none">
+                            <path d="M21 9.5H0.984375C0.71875 9.5 0.488281 9.40234 0.292969 9.20703C0.0976563 9.01172 0 8.77344 0 8.49219C0 8.22656 0.0976563 7.99609 0.292969 7.80078C0.488281 7.60547 0.71875 7.50781 0.984375 7.50781H21C21.2656 7.50781 21.4961 7.60547 21.6914 7.80078C21.8867 7.99609 21.9844 8.22656 21.9844 8.49219C21.9844 8.77344 21.8867 9.01172 21.6914 9.20703C21.4961 9.40234 21.2656 9.5 21 9.5ZM21.9844 1.50781C21.9844 1.22656 21.8867 0.988281 21.6914 0.792969C21.4961 0.597656 21.2656 0.5 21 0.5H0.984375C0.71875 0.5 0.488281 0.597656 0.292969 0.792969C0.0976563 0.988281 0 1.22656 0 1.50781C0 1.77344 0.0976563 2.00391 0.292969 2.19922C0.488281 2.39453 0.71875 2.49219 0.984375 2.49219H21C21.2656 2.49219 21.4961 2.39453 21.6914 2.19922C21.8867 2.00391 21.9844 1.77344 21.9844 1.50781ZM21.9844 15.5C21.9844 15.2188 21.8867 14.9805 21.6914 14.7852C21.4961 14.5898 21.2656 14.4922 21 14.4922H0.984375C0.71875 14.4922 0.488281 14.5898 0.292969 14.7852C0.0976563 14.9805 0 15.2188 0 15.5C0 15.7812 0.0976563 16.0195 0.292969 16.2148C0.488281 16.4102 0.71875 16.5078 0.984375 16.5078H21C21.2656 16.5078 21.4961 16.4102 21.6914 16.2148C21.8867 16.0195 21.9844 15.7812 21.9844 15.5Z" fill="white"/>
+                            </svg> 
+                        -->
+                    </div>
+                    <div class="sidebar-brand-text mx-3"></div>
+                </a>
+    
+                <!-- Divider -->
+                <div  class="four">
+    
+                    <!-- Nav Item - Dashboard -->
+                    <li class="nav-item active bg-gray-200 mt-5" style="border-radius:6px;width:100%">
+                        <a class="nav-link" href="index.html">
+                            <img src="img/Vector (8).svg" alt="photo">
+                            <span class="text-primary ml-3" style="color:#364A63">Dashboard</span></a>
+                    </li>
+    
+                    <!-- Divider -->
+                    <div class="five">
+    
+                        <!-- Heading -->
+                        <div class="sidebar-heading">
+                        </div>
+    
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" 
+                             >
+                                <img src="img/Vector (1).svg" alt="photo">
+                                <span class="font-weight-bold ml-3" style=" color:#364A63">Courses</span>
+                            </a>
+                            <div >
+                               
+                            </div>
+                        </li>
+    
+                        <!-- Nav Item - Utilities Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" >
+                                <img src="img/Vector (5).svg" alt="photo">
+                                <span class="font-weight-bold ml-3" style="color:#364A63">Free Details</span>
+                            </a>
+                            <div >
+                              
+                            </div>
+                        </li>
+                        <!-- Divider -->
+                        <!-- <hr class="sidebar-divider"> -->
+    
+                        <!-- Heading -->
+                        <div class="sidebar-heading">
+                        </div>
+    
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" >
+                                <img src="img/Vector (6).svg" alt="photo">
+                                <span class="font-weight-bold ml-3" style="color:#364A63">Scholarship</span>
+                            </a>
+                            <div >
+                                
+                            </div>
+                        </li>
+    
+                        <!-- Nav Item - Charts -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="charts.html" >
+                                <img src="img/Vector (2).svg" alt="photo">
+                                <span class="font-weight-bold ml-3" style="color:#364A63">Consent Form</span>
+                            </a>
+                            <div >
+                             
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                      <img src="img/Vector (4).svg" alt="photo">
+                        <span>OJT records</span>
+                    </a>
+                </li>   -->
+                        <!-- Nav Item - Tables -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="tables.html" >
+                                <img src="img/Vector (4).svg" alt="photo">
+                                <span class="font-weight-bold ml-3" style="color:#364A63">Contact SRO</span></a>
+                        </li>
+                        <!-- Divider -->
+                        <hr class="sidebar-divider d-none d-md-block">
+    
+                        <!-- Sidebar Toggler (Sidebar)
+                <div class="text-center d-none d-md-inline">
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div> -->
+    
+                        <!-- Sidebar Message -->
+                        <!-- <div class="sidebar-card d-none d-lg-flex"> -->
+                        <!-- <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="..."> -->
+                        <!-- <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p> -->
+                        <!-- <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a> -->
+                    </div>
+            </ul>
+        </div>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <div class="header">
+                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    
+                        <!-- Sidebar Toggle (Topbar) -->
+                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+    
+                        <!-- Topbar Search -->
+                        <form
+                            class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group">
+                                <button class="btn" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                                <input type="text" class="form-control bg-light border-0 small"
+                                    placeholder="search anything" aria-label="Search" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+    
+                                </div>
+                            </div>
+                        </form>
+    
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+    
+                            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                            <li class="nav-item dropdown no-arrow d-sm-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-search fa-fw"></i>
+                                </a>
+                                <!-- Dropdown - Messages -->
+                                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                    aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto w-100 navbar-search">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control bg-light border-0 small"
+                                                placeholder="Search for..." aria-label="Search"
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fas fa-search fa-sm"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+    
+                            <!-- Nav Item - Alerts -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="img/Vector (7).svg" alt="photo">
+                                    <!-- Counter - Alerts -->
+                                    <span class="badge badge-danger badge-counter"></span>
+                                </a>
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">
+                                        Alerts Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-primary">
+                                                <i class="fas fa-file-alt text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 12, 2019</div>
+                                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-success">
+                                                <i class="fas fa-donate text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 7, 2019</div>
+                                            $290.29 has been deposited into your account!
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-warning">
+                                                <i class="fas fa-exclamation-triangle text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 2, 2019</div>
+                                            Spending Alert: We've noticed unusually high spending for your account.
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </li>
+    
+                            <!-- Nav Item - Messages -->
+                            <!-- <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-envelope fa-fw"></i> -->
+                            <!-- Counter - Messages -->
+                            <!-- <span class="badge badge-danger badge-counter">7</span> -->
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                            </li>
+    
+                            <div class="topbar-divider d-none d-sm-block"></div>
+    
+                            <!-- Nav Item - User Information -->
+                            <li class="nav-item dropdown no-arrow">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="img-fluid rounded-circle m-1  p-2" style="background-color:#46972C"
+                                        src="img/Vector (7).svg" alt="photo">
+                                    <ul class="list-group">
+                                        <span style="color: #46972C;">Administrator</span>
+                                        <span Class="text-dark">Dr.Adeel <img src="img/Vector (6).svg" alt="photo"></span>
+    
+                                    </ul>
+                                    <!-- <span class="mr-2 d-lg-inline text-gray-600 small">Administrator</span>
+                                        <span class="mr-2 d-lg-inline text-gray-600 small">Dr.Adeel</span> -->
+                                </a>
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Profile
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Settings
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Activity Log
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+    
+                        </ul>
+    
+                    </nav>
+                </div>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                
+                    <h1 style="color: #364A63;"  class="h3 mb-2 text-gray-800">Dashboard</h1>
+                    <p class="mb-4">Welcome to Learning Management System. <a
+                            target="_blank" href="https://www.chartjs.org/docs/latest/">
+                            </a>.</p>
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <h1 class="Rj">Course Name</h1>
+                    </div>
+
+
+                    <div  style="width: 1572px;
+                    height: 225px; background-color: #FFF;">
+                        <table class="table">
+                           
+                            <tbody>
+                                <div>
+                              <tr>
+                                
+                                <td> <input  type="checkbox" value="" id="flexcheckchecked" >
+                                    <label style="position: relative;
+                                    left: 20px;" for="flexcheckchecked">Assignments</td>
+                                <td> </td>
+                                <td></td>
+                                <td></td> 
+                                  <td></td>
+                                <td></td>
+                                
+                              </tr>
+                              
+                    
+                         
+                              <tr>
+                            
+                                <td> <input style="gap: 5px;" type="checkbox" value="" id="flexcheckchecked" >
+                                    <label for="flexcheckchecked"><input class="six" type="textbox" value="A1" id="textbox">
+                                        <label style="position: relative;
+                                        left: 20px;" for="textbox">Assignment 01</label></td>
+                                       
+                                        
+                             
+
+                                
+                                <td> <td><button class="seven"
+                        >View</button> <button class="nine"
+                        >Download</button></td></td>
+                               </tr>
+                              <tr>
+                                
+                                <td> <input style="gap: 5px;" type="checkbox" value="" id="flexcheckchecked" >
+                                    
+                                    <label for="flexcheckchecked"><input class="six" type="textbox" value="A2" id="textbox">
+                  
+                                        <label style="position: relative;
+                                        left: 20px;" for="textbox">Assignment 02</label></td>
+                                        
+                                        
+                               
+                                <td> <td><button class="seven"
+                                    >View</button> <button class="nine"
+                        >Download</button></td></td>
+                               
+                              </tr>
+
+                              <tr>     </div>
+                               
+                          </table>
+                      
+                    
+                    
+                    </div>
+            </div>
+        </div>
+                  
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+</body>
+
+</html>
